@@ -4,6 +4,7 @@ import { Injectable } from '@angular/core';
 
 import { URL_API} from './app.api';
 
+//Biblioteca Reactive X JavaScript => PROGRAMAÇÃO REATIVA
 import 'rxjs'
 
 @Injectable() export class OfertasService {
@@ -16,7 +17,7 @@ import 'rxjs'
         //coverte o Observeble para Promise
         .toPromise()
         .then((resposta: any) => resposta)
-      //  retornar uma promise Ofertas[]
+      //  retornar uma promise Oferta[]
     }
 
     public getOfertasPorCategoria(categoria: string) : Promise<Oferta[]>{
