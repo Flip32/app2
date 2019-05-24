@@ -9,6 +9,7 @@ import { OfertaComponent } from './oferta/oferta.component';
 import { ComoUsarComponent } from './oferta/como-usar/como-usar.component';
 import { OndeFicaComponent } from './oferta/onde-fica/onde-fica.component';
 import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
+import {OrdemCompraComponent} from './ordem-compra/ordem-compra.component';
 
 
 const ROUTES: Routes = [
@@ -26,6 +27,7 @@ const ROUTES: Routes = [
 
 
             ]},
+  { path: 'ordem-compra', component: OrdemCompraComponent },
   { path: "**", component: PageNotFoundComponent }
 ];
 
